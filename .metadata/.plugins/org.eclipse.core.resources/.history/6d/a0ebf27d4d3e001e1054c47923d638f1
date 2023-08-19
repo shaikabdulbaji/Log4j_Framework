@@ -1,0 +1,40 @@
+package Sample;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Sample {
+	
+	public static void main(String[] args) {
+		
+		Logger log = (Logger) LogManager.getLogger(Sample.class.getName());
+		
+		log.debug("Browser has Lanched");
+		WebDriver driver = new ChromeDriver();
+		
+		log.debug("Browser has Maximized");
+		driver.manage().window().maximize();
+		driver.get("https://omayo.blogspot.com");
+		
+		driver.findElement(By.xpath("//a[text()='compendiumdev']")).click();
+		
+		driver.navigate().back();
+		
+		System.out.println(driver.getTitle());
+		
+		if((driver.getTitle()).equals("omayo (QAFox.com)"))
+		{
+			System.out.println("Passed");
+		}else
+		{
+			System.out.println("Failed");
+		}
+		
+		driver.close();
+	}
+
+}

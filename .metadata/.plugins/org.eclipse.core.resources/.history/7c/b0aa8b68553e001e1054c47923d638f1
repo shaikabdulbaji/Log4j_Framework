@@ -1,0 +1,6 @@
+11:07:19.523 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+11:07:19.720 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x540e1ef5a391fb0e
+11:07:19.808 [main] DEBUG Sample.Sample - Browser has Maximized
+11:07:19.970 [main] DEBUG Sample.Sample - Browser has Open the URL
+11:07:24.761 [main] DEBUG Sample.Sample - Browser has Navigate to Back
+11:07:24.875 [main] INFO  Sample.Sample - Passed
